@@ -19,6 +19,7 @@
 .NOTES
     Author: Thiago Beier (thiago.beier@gmail.com)
     Social: https://x.com/thiagobeier https://thebeier.com/ https://www.linkedin.com/in/tbeier/
+    Version: 0.1.1
     Date created: May 20, 2025
     Date updated: May 20, 2025
  
@@ -127,7 +128,10 @@ else {
 
 }
 
-# Write-Host "Result: $($result | Out-String)"
+# Display the result
+Write-Host "Result: $($result | Out-String)"
+
+# Display the log file
 explorer.exe $LogPath   
 
 # $result now contains all found modules and scripts as objects
